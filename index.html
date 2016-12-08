@@ -402,18 +402,14 @@
 
       
         
-          
-            <h1 id="关于是用Vapor"><a href="#关于是用Vapor" class="headerlink" title="关于是用Vapor"></a>关于是用Vapor</h1><p><strong>Vapor</strong>是基于Swift开发的服务端的框架. (它能快速构建webServer)  能让客户端开发者快速了解服务端的开发方式. 但是我觉得它更进步的意义在于, 能忘客户端开发不依赖于服务端的API接口. 前端后端可以并行. 只要开始定义好接口. 后期直接更换.<br>能部署在:<br>| platform      |    support |<br>| :——– | :——–:|<br>| macOS  | YES |<br>| Ubuntu     | YES | </p>
-<p>部署在Ubuntu上比较麻烦, 不过它有自己的小工具: Toolbox. 用它来安装十分方便.<br>它的官网也提供快速安装 Swift和 Toolbox的方法:<br>curl -sL swift.vapor.sh/ubuntu | bash  <strong>安装Swift</strong><br>curl -sL toolbox.vapor.sh | bash   <strong>安装Toolbox</strong></p>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vapor new Hello</div></pre></td></tr></table></figure>
-<p>它生成的文件结构</p>
-<blockquote>
-<p>.<br>├── Sources<br>│   └── App<br>│       └── Controllers<br>│       └── Middleware<br>│       └── Models<br>│       └── main.swift<br>├── Public<br>├── Resources<br>│   └── Views<br>└── Package.swift</p>
-</blockquote>
-<p>下面展示一个如何用它定义一个API, 返回JSON:<br>在main函数里面:<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Vapor</div><div class="line"><span class="keyword">import</span> Foundation</div><div class="line"></div><div class="line"><span class="keyword">let</span> drop = <span class="type">Droplet</span>()</div><div class="line"></div><div class="line"><span class="keyword">let</span> url = <span class="type">URL</span>(fileURLWithPath: <span class="string">"/Users/wanghongyang/Desktop/MyService/MyService/Sources/App/JSONFile"</span>)</div><div class="line"></div><div class="line"><span class="keyword">let</span> data = <span class="keyword">try</span> <span class="type">Data</span>(contentsOf: url)</div><div class="line"><span class="keyword">let</span> jsonString = <span class="type">String</span>.<span class="keyword">init</span>(data: data, encoding: .utf8)</div><div class="line"><span class="keyword">let</span> json = <span class="keyword">try</span> <span class="type">JSON</span>(bytes: (jsonString?.bytes)!)</div><div class="line"></div><div class="line">drop.<span class="keyword">get</span>(<span class="string">"fetchJSON"</span>) &#123; request <span class="keyword">in</span></div><div class="line"><span class="keyword">return</span> json</div><div class="line">&#125;</div><div class="line"></div><div class="line">drop.resource(<span class="string">"posts"</span>, <span class="type">PostController</span>()</div><div class="line">drop.run()</div></pre></td></tr></table></figure></p>
-<p>通过 0.0.0.0:8080/fetchJSON 我们就能拿到json数据了<br>是不是很简单. 想不想上手玩一下.</p>
-
-          
+          <h1 id="关于是用Vapor"><a href="#关于是用Vapor" class="headerlink" title="关于是用Vapor"></a>关于是用Vapor</h1><p><strong>Vapor</strong>是基于Swift开发的服务端的框架. (它能快速构建webServer)  能让客户端开发者快速了解服务端的开发方式. 但是我觉得它更进步的意义在于, 能忘客户端开发不依赖于服务端的API接口. 前端后端可以并行. 只要开始定义好接口. 后期直接更换.<br>
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/08/Vapor的简单介绍/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
