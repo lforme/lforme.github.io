@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS,Swift," />
 
 
 
@@ -86,15 +86,16 @@
 
 
 
-<meta name="description" content="没事瞎逼逼">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lforme">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="关于是用VaporVapor是基于Swift开发的服务端的框架. (它能快速构建webServer)  能让客户端开发者快速了解服务端的开发方式. 但是我觉得它更进步的意义在于, 能忘客户端开发不依赖于服务端的API接口. 前端后端可以并行. 只要开始定义好接口. 后期直接更换.能部署在:| platform      |    support || :——– | :——–:|| macOS  |">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vapor的简单介绍">
+<meta property="og:url" content="http://yoursite.com/2016/12/08/Vapor的简单介绍/index.html">
 <meta property="og:site_name" content="Lforme">
-<meta property="og:description" content="没事瞎逼逼">
+<meta property="og:description" content="关于是用VaporVapor是基于Swift开发的服务端的框架. (它能快速构建webServer)  能让客户端开发者快速了解服务端的开发方式. 但是我觉得它更进步的意义在于, 能忘客户端开发不依赖于服务端的API接口. 前端后端可以并行. 只要开始定义好接口. 后期直接更换.能部署在:| platform      |    support || :——– | :——–:|| macOS  |">
+<meta property="og:updated_time" content="2016-12-08T13:45:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lforme">
-<meta name="twitter:description" content="没事瞎逼逼">
+<meta name="twitter:title" content="Vapor的简单介绍">
+<meta name="twitter:description" content="关于是用VaporVapor是基于Swift开发的服务端的框架. (它能快速构建webServer)  能让客户端开发者快速了解服务端的开发方式. 但是我觉得它更进步的意义在于, 能忘客户端开发不依赖于服务端的API接口. 前端后端可以并行. 只要开始定义好接口. 后期直接更换.能部署在:| platform      |    support || :——– | :——–:|| macOS  |">
 
 
 
@@ -122,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/12/08/Vapor的简单介绍/"/>
 
 
 
 
 
-  <title> Lforme </title>
+  <title> Vapor的简单介绍 | Lforme </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -149,9 +150,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -280,9 +279,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -315,10 +314,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/12/08/Vapor的简单介绍/" itemprop="url">
-                  Vapor的简单介绍
-                </a>
+                Vapor的简单介绍
               
             
           </h1>
@@ -401,9 +397,7 @@
       
 
       
-        
-          
-            <h1 id="关于是用Vapor"><a href="#关于是用Vapor" class="headerlink" title="关于是用Vapor"></a>关于是用Vapor</h1><p><strong>Vapor</strong>是基于Swift开发的服务端的框架. (它能快速构建webServer)  能让客户端开发者快速了解服务端的开发方式. 但是我觉得它更进步的意义在于, 能忘客户端开发不依赖于服务端的API接口. 前端后端可以并行. 只要开始定义好接口. 后期直接更换.<br>能部署在:<br>| platform      |    support |<br>| :——– | :——–:|<br>| macOS  | YES |<br>| Ubuntu     | YES | </p>
+        <h1 id="关于是用Vapor"><a href="#关于是用Vapor" class="headerlink" title="关于是用Vapor"></a>关于是用Vapor</h1><p><strong>Vapor</strong>是基于Swift开发的服务端的框架. (它能快速构建webServer)  能让客户端开发者快速了解服务端的开发方式. 但是我觉得它更进步的意义在于, 能忘客户端开发不依赖于服务端的API接口. 前端后端可以并行. 只要开始定义好接口. 后期直接更换.<br>能部署在:<br>| platform      |    support |<br>| :——– | :——–:|<br>| macOS  | YES |<br>| Ubuntu     | YES | </p>
 <p>部署在Ubuntu上比较麻烦, 不过它有自己的小工具: Toolbox. 用它来安装十分方便.<br>它的官网也提供快速安装 Swift和 Toolbox的方法:<br>curl -sL swift.vapor.sh/ubuntu | bash  <strong>安装Swift</strong><br>curl -sL toolbox.vapor.sh | bash   <strong>安装Toolbox</strong></p>
 <h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vapor new Hello</div></pre></td></tr></table></figure>
 <p>它生成的文件结构</p>
@@ -413,361 +407,85 @@
 <p>下面展示一个如何用它定义一个API, 返回JSON:<br>在main函数里面:<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Vapor</div><div class="line"><span class="keyword">import</span> Foundation</div><div class="line"></div><div class="line"><span class="keyword">let</span> drop = <span class="type">Droplet</span>()</div><div class="line"></div><div class="line"><span class="keyword">let</span> url = <span class="type">URL</span>(fileURLWithPath: <span class="string">"/Users/wanghongyang/Desktop/MyService/MyService/Sources/App/JSONFile"</span>)</div><div class="line"></div><div class="line"><span class="keyword">let</span> data = <span class="keyword">try</span> <span class="type">Data</span>(contentsOf: url)</div><div class="line"><span class="keyword">let</span> jsonString = <span class="type">String</span>.<span class="keyword">init</span>(data: data, encoding: .utf8)</div><div class="line"><span class="keyword">let</span> json = <span class="keyword">try</span> <span class="type">JSON</span>(bytes: (jsonString?.bytes)!)</div><div class="line"></div><div class="line">drop.<span class="keyword">get</span>(<span class="string">"fetchJSON"</span>) &#123; request <span class="keyword">in</span></div><div class="line"><span class="keyword">return</span> json</div><div class="line">&#125;</div><div class="line"></div><div class="line">drop.resource(<span class="string">"posts"</span>, <span class="type">PostController</span>()</div><div class="line">drop.run()</div></pre></td></tr></table></figure></p>
 <p>通过 0.0.0.0:8080/fetchJSON 我们就能拿到json数据了<br>是不是很简单. 想不想上手玩一下.</p>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
       
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/08/关于Hexo使用/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="W.H.Y">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Lforme">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Lforme" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/08/关于Hexo使用/" itemprop="url">
-                  关于Hexo使用
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-08T20:56:52+08:00">
-                2016-12-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2016/12/08/关于Hexo使用/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/08/关于Hexo使用/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/12/08/关于Hexo使用/" class="leancloud_visitors" data-flag-title="关于Hexo使用">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-
-          
-
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="https://github.com/lforme/lforme.github.io/blob/master/uploads/wechat-reward-image.png?raw=true" alt="W.H.Y WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
       
       
-
-      
-        
-          <h1 id="关于Hexo使用"><a href="#关于Hexo使用" class="headerlink" title="关于Hexo使用"></a>关于Hexo使用</h1><p>@(hexo)[github pages|帮助]</p>
-<p><strong>Hexo</strong>是一款快速搭建静态页面博客的工具, 依托于github pages的服务. 快速为个人搭建一个定制化极高的博客. (社区成熟, 主题多) 使用起来也是十分简单. 安装依托node.js:<br>npm install -g hexo-cli<br>由于国内使用npm安装<strong>缓慢</strong> 推荐用:</p>
-<p><font color=green>npm install -g hexo-cli –registry=<a href="http://registry.npm.taobao.org">http://registry.npm.taobao.org</a></font>  来安装.</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a>
-          <!--noindex-->
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/08/关于Hexo使用/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/07/博客搬家了/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="W.H.Y">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Lforme">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Lforme" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/07/博客搬家了/" itemprop="url">
-                  博客搬家了
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-07T15:28:52+08:00">
-                2016-12-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2016/12/07/博客搬家了/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/07/博客搬家了/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/12/07/博客搬家了/" class="leancloud_visitors" data-flag-title="博客搬家了">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-
-          
-
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="https://github.com/lforme/lforme.github.io/blob/master/uploads/alipay-reward-image.png?raw=true" alt="W.H.Y Alipay"/>
+          <p>支付宝打赏</p>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>之前很早写在简书, 现在搬迁一下. - - </p>
-<p>原文作者: <em>Written By : Debasis Das (17-Jan-2015)</em> <a href="http://www.knowstack.com/concurrency-nsoperationqueue-grand-central-dispatch/" title="原文">原文地址</a><br>文章会给出一些关于这一话题的代码示例.</p>
-<ul>
-<li>什么是并发?</li>
-<li>什么是<strong><em>NSOperationQueue</em></strong></li>
-<li>介绍<strong><em>Introduction</em></strong>:</li>
-<li><strong><em>NSInvocationOperation</em></strong></li>
-<li><strong><em>NSBlockOperation</em></strong></li>
-<li><strong><em>Operation</em></strong></li>
-<li>什么是<strong><em>Dispatch Queues</em></strong></li>
-<li><strong><em>Types of Dispatch Queues</em></strong></li>
-<li><strong><em>NSOperationQueue 和 DispatchQueues</em></strong>的区别
-          <!--noindex-->
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/12/07/博客搬家了/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
+  </div>
 
-    <div>
-      
-    </div>
 
-    <div>
       
     </div>
 
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag"># iOS</a>
+          
+            <a href="/tags/Swift/" rel="tag"># Swift</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/08/关于Hexo使用/" rel="next" title="关于Hexo使用">
+                <i class="fa fa-chevron-left"></i> 关于Hexo使用
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -775,6 +493,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/12/08/Vapor的简单介绍/"
+           data-title="Vapor的简单介绍" data-url="http://yoursite.com/2016/12/08/Vapor的简单介绍/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -794,8 +520,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -881,6 +616,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于是用Vapor"><span class="nav-number">1.</span> <span class="nav-text">关于是用Vapor</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">1.0.1.</span> <span class="nav-text">使用</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -976,6 +727,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
