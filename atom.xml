@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-08T12:57:54.000Z</updated>
+  <updated>2016-12-08T12:59:25.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,13 +20,12 @@
     <link href="http://yoursite.com/2016/12/08/%E5%85%B3%E4%BA%8EHexo%E4%BD%BF%E7%94%A8/"/>
     <id>http://yoursite.com/2016/12/08/关于Hexo使用/</id>
     <published>2016-12-08T12:56:52.000Z</published>
-    <updated>2016-12-08T12:57:54.000Z</updated>
+    <updated>2016-12-08T12:59:25.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="关于Hexo使用"><a href="#关于Hexo使用" class="headerlink" title="关于Hexo使用"></a>关于Hexo使用</h1><p>@(hexo)[github pages|帮助]</p>
 <p><strong>Hexo</strong>是一款快速搭建静态页面博客的工具, 依托于github pages的服务. 快速为个人搭建一个定制化极高的博客. (社区成熟, 主题多) 使用起来也是十分简单. 安装依托node.js:<br>npm install -g hexo-cli<br>由于国内使用npm安装<strong>缓慢</strong> 推荐用:</p>
 <p><font color="green">npm install -g hexo-cli –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="external">http://registry.npm.taobao.org</a></font>  来安装.</p>
-<hr>
-<h2 id="Hexo使用"><a href="#Hexo使用" class="headerlink" title="Hexo使用"></a>Hexo使用</h2><blockquote>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h2 id="Hexo使用"><a href="#Hexo使用" class="headerlink" title="Hexo使用"></a>Hexo使用</h2><blockquote>
 <p>A fast, simple &amp; powerful blog framework, powered by Node.js.    —— <a href="https://www.npmjs.com/package/hexo" target="_blank" rel="external">Hexo官网</a></p>
 </blockquote>
 <p>正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个<a href="http://www.example.com" target="_blank" rel="external">链接</a>或一个脚注[^demo]。下面列举了几个高级功能，更多语法请按<code>Cmd + /</code>查看帮助。 </p>
@@ -40,7 +39,9 @@
     <summary type="html">
     
       &lt;h1 id=&quot;关于Hexo使用&quot;&gt;&lt;a href=&quot;#关于Hexo使用&quot; class=&quot;headerlink&quot; title=&quot;关于Hexo使用&quot;&gt;&lt;/a&gt;关于Hexo使用&lt;/h1&gt;&lt;p&gt;@(hexo)[github pages|帮助]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Hexo&lt;/
+&lt;p&gt;&lt;strong&gt;Hexo&lt;/strong&gt;是一款快速搭建静态页面博客的工具, 依托于github pages的服务. 快速为个人搭建一个定制化极高的博客. (社区成熟, 主题多) 使用起来也是十分简单. 安装依托node.js:&lt;br&gt;npm install -g hexo-cli&lt;br&gt;由于国内使用npm安装&lt;strong&gt;缓慢&lt;/strong&gt; 推荐用:&lt;/p&gt;
+&lt;p&gt;&lt;font color=green&gt;npm install -g hexo-cli –registry=&lt;a href=&quot;http://registry.npm.taobao.org&quot;&gt;http://registry.npm.taobao.org&lt;/a&gt;&lt;/font&gt;  来安装.&lt;/p&gt;
+&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;
     
     </summary>
     
